@@ -23,10 +23,10 @@
 	--fw-medium: 500;
 	--fw-bold: 600;
 
-	--ff-body: "manrope";
+	--ff-sans-serif: "manrope", sans-serif;
 }
 
-/* CSS RESET */
+/* RESET */
 
 /* Simpler sizing */
 *,
@@ -35,7 +35,7 @@
 	box-sizing: border-box;
 }
 
-/* Removes defualt spacing and text-styling */
+/* Removes defualt spacing */
 * {
 	margin: 0;
 	padding: 0;
@@ -44,6 +44,7 @@
 
 body {
 	min-height: 100vh;
+	text-rendering: optimizeSpeed;
 }
 
 /* Responsive images and videos */
@@ -55,8 +56,29 @@ video {
 	max-width: 100%;
 }
 
+/* Remove all animations, transitions and smooth scroll for people who prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
 /* STYLING */
 
 body {
-	font-family: var(--ff-body);
+	font-family: var(--ff-sans-serif);
+	font-size: var(--fs-400);
+	font-weight: var(--fw-regular);
+	line-height: 1.5;
+
+	background: var(--clr-primary-100);
 }
