@@ -75,10 +75,29 @@ video {
 /* STYLING */
 
 body {
+	background: var(--clr-primary-100);
+	color: var(--clr-neutral-900);
+
 	font-family: var(--ff-sans-serif);
 	font-size: var(--fs-400);
 	font-weight: var(--fw-regular);
 	line-height: 1.5;
+}
 
-	background: var(--clr-primary-100);
+.main-nav__links ul {
+	display: flex;
+	justify-content: center;
+	gap: 2.5rem;
+	padding: 0.75rem 0;
+
+	background: var(--clr-neutral-000);
+	list-style: none;
+}
+
+.main-nav__links a {
+	color: var(--clr-neutral-900);
+
+	font-size: var(--fs-500);
+	font-weight: var(--fw-medium);
+	text-decoration: none;
 }
