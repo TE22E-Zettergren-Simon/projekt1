@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap");
+
 /* CUSTOM PROPERTIES */
 
 :root {
@@ -20,4 +22,12 @@
 	--fw-regular: 400;
 	--fw-medium: 500;
 	--fw-bold: 600;
+
+	--ff-body: "manrope";
+}
+
+/* Styling */
+
+body {
+	font-family: var(--ff-body);
 }
