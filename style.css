@@ -83,6 +83,10 @@ body {
 	line-height: 1.5;
 }
 
+b {
+	font-weight: var(--fw-bold);
+}
+
 .main-nav__links ul {
 	display: flex;
 	justify-content: center;
@@ -246,6 +250,22 @@ main img {
 	background: var(--clr-neutral-000);
 }
 
-.ingredients b {
-	font-weight: var(--fw-bold);
+.instructions {
+	padding: 1.5rem;
+	background: var(--clr-neutral-000);
+}
+
+.instructions h2 {
+	font-size: var(--fs-700);
+	font-weight: var(--fw-medium);
+}
+
+.instructions p {
+	padding: 0.25rem 1.25rem;
+}
+
+.instructions > p:last-child {
+	text-align: center;
+	font-size: var(--fs-500);
+	font-weight: var(--fw-medium);
 }
