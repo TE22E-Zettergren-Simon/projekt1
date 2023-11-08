@@ -298,3 +298,15 @@ main img {
 	background: var(--clr-primary-300);
 	margin: 0.25rem -0.75rem;
 }
+
+.bottom-images {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+
+.bottom-images img {
+	width: 20vw;
+}
