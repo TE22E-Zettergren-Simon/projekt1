@@ -310,3 +310,33 @@ main img {
 .bottom-images img {
 	width: 20vw;
 }
+
+footer {
+	display: flex;
+	flex-direction: row;
+
+	gap: 2.25rem;
+	padding: 0.75rem 3.5rem;
+
+	background: var(--clr-neutral-000);
+	border-top: var(--clr-neutral-200) solid 2px;
+	font-size: var(--fs-500);
+}
+
+footer h2 {
+	font-weight: var(--fw-bold);
+}
+
+footer button {
+	margin-left: auto;
+	padding: 0.25rem 0.825rem;
+	color: var(--clr-accent-400);
+	background: var(--clr-primary-200);
+	border: none;
+	border-radius: 100vmax;
+	font-weight: var(--fw-bold);
+}
+
+footer button:hover {
+	background: var(--clr-primary-300);
+}
