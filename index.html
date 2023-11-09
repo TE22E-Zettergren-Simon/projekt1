@@ -8,8 +8,8 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<nav>
-			<div class="main-nav__links">
+		<header>
+			<nav>
 				<ul>
 					<li><a href="#">Hem</a></li>
 					<li><a href="#">Recept</a></li>
@@ -17,30 +17,30 @@
 					<li><a href="#">Blogg</a></li>
 					<li><a href="#">Kontakt</a></li>
 				</ul>
-			</div>
-			<div class="main-nav__search">
-				<div class="main-nav__search-bar">
+			</nav>
+			<div class="search">
+				<div class="search-bar">
 					<input type="text" placeholder="Sök efter fler recept" />
 					<button>
 						<img src="image/search.svg" alt="Sök" />
 					</button>
 				</div>
 			</div>
-		</nav>
+		</header>
 
 		<main>
-			<header>
+			<div class="recipe-details">
 				<h1>Gourmet Hamburgare</h1>
-				<div class="header__info">
-					<div class="header__info-card">
+				<div class="recipe-details__info">
+					<div class="recipe-details__info-card">
 						<img src="image/timer.svg" alt="Klocka" />
 						<p>Över 60 min</p>
 					</div>
-					<div class="header__info-card">
+					<div class="recipe-details__info-card">
 						<img src="image/ingredients.svg" alt="Ingredienser" />
 						<p>17 ingredienser</p>
 					</div>
-					<div class="header__info-card">
+					<div class="recipe-details__info-card">
 						<img src="image/portions.svg" alt="Portioner" />
 						<p>4 portioner</p>
 					</div>
@@ -53,19 +53,19 @@
 					dijonnaise, tomat och krispig silverlök. Burgare när de är
 					som bäst!
 				</p>
-				<button class="header__button">
+				<button class="recipe-details__button">
 					<img src="image/heart.svg" alt="Hjärta" />
 					<p>Spara</p>
 				</button>
-				<button class="header__button">
+				<button class="recipe-details__button">
 					<img src="image/share.svg" alt="Dela" />
 					<p>Dela</p>
 				</button>
-				<button class="header__button">
+				<button class="recipe-details__button">
 					<img src="image/print.svg" alt="Skriv ut" />
 					<p>Skriv ut</p>
 				</button>
-			</header>
+			</div>
 
 			<img src="image/burger_main.webp" alt="Hamburgare" />
 
@@ -97,63 +97,59 @@
 				<p><b>4</b> hamburgarbröd</p>
 			</section>
 
-			<section class="main__right">
-				<section class="instructions">
-					<h2>Gör så här</h2>
-					<p>
-						<b>Burgare:</b> Forma färsen till en rulle, ca 12 cm
-						lång (utan kryddor). Rulla in i plastfilm och ställ i
-						kylen minst 1 timme.
-					</p>
-					<p>
-						<b>Bloody Mary Ketchup:</b> Rör ihop alla ingredienser.
-					</p>
-					<p><b>Dijonnaise:</b> Rör ihop majonnäs och senap.</p>
-					<p>Skär bifftomaten i ½ cm tunna skivor.</p>
-					<p>Skala och skär silverlöken tunt.</p>
-					<p>
-						<b>Burgare:</b> Skär färsen i 4 skivor, cirka 3 cm
-						tjocka, och krydda med salt och peppar.
-					</p>
-					<p>
-						Stek i talg eller smör på hög värme tills de får färg på
-						båda sidor och är genomstekta. Lägg i ugnsform och låt
-						vila 5 minuter.
-					</p>
-					<p>Sätt ugnen på 255°C övervärme/ grill.</p>
-					<p>
-						Lägg osten på burgarna. Ställ in i ugnen ca 2 minuter
-						tills osten smälter. Rosta bröden. Lägg burgaren på
-						botten och toppa med dijonnaise, tomat, ketchup och lök.
-					</p>
-					<p>Servera och njut!</p>
-				</section>
+			<section class="instructions">
+				<h2>Gör så här</h2>
+				<p>
+					<b>Burgare:</b> Forma färsen till en rulle, ca 12 cm lång
+					(utan kryddor). Rulla in i plastfilm och ställ i kylen minst
+					1 timme.
+				</p>
+				<p><b>Bloody Mary Ketchup:</b> Rör ihop alla ingredienser.</p>
+				<p><b>Dijonnaise:</b> Rör ihop majonnäs och senap.</p>
+				<p>Skär bifftomaten i ½ cm tunna skivor.</p>
+				<p>Skala och skär silverlöken tunt.</p>
+				<p>
+					<b>Burgare:</b> Skär färsen i 4 skivor, cirka 3 cm tjocka,
+					och krydda med salt och peppar.
+				</p>
+				<p>
+					Stek i talg eller smör på hög värme tills de får färg på
+					båda sidor och är genomstekta. Lägg i ugnsform och låt vila
+					5 minuter.
+				</p>
+				<p>Sätt ugnen på 255°C övervärme/ grill.</p>
+				<p>
+					Lägg osten på burgarna. Ställ in i ugnen ca 2 minuter tills
+					osten smälter. Rosta bröden. Lägg burgaren på botten och
+					toppa med dijonnaise, tomat, ketchup och lök.
+				</p>
+				<p>Servera och njut!</p>
+			</section>
 
-				<section class="nutritional-info">
-					<h3>Näringsvärde per portion</h3>
+			<section class="nutritional-info">
+				<h3>Näringsvärde per portion</h3>
 
-					<div class="nutritional-info__table">
-						<p>Energi</p>
-						<b>3625 KJ / 866 kCal</b>
-						<div></div>
-						<p>Fett</p>
-						<b>60 g</b>
-						<p>Salt</p>
-						<b>6 g</b>
-						<p>Kolhydrater</p>
-						<b>35 g</b>
-						<p>Protein</p>
-						<b>46 g</b>
-					</div>
-				</section>
+				<div class="nutritional-info__table">
+					<p>Energi</p>
+					<b>3625 KJ / 866 kCal</b>
+					<div></div>
+					<p>Fett</p>
+					<b>60 g</b>
+					<p>Salt</p>
+					<b>6 g</b>
+					<p>Kolhydrater</p>
+					<b>35 g</b>
+					<p>Protein</p>
+					<b>46 g</b>
+				</div>
+			</section>
 
-				<section class="bottom-images">
-					<img src="image/bifftomat.webp" alt="Bifftomat" />
-					<img
-						src="image/bloody mary ketchup.webp"
-						alt="Bloody Mary Ketchup"
-					/>
-				</section>
+			<section class="bottom-images">
+				<img src="image/bifftomat.webp" alt="Bifftomat" />
+				<img
+					src="image/bloody mary ketchup.webp"
+					alt="Bloody Mary Ketchup"
+				/>
 			</section>
 		</main>
 
